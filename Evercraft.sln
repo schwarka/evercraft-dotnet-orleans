@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0454AE44-0AB9-4F04-B242-DC504C2C9A8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{89B391A5-9805-46C7-ACA6-4D67AF789574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evercraft.Orleans.Grains", "Evercraft.Orleans.Grains\Evercraft.Orleans.Grains.csproj", "{DEE7B7D1-4365-4791-B947-9982D81A1BDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evercraft.Orleans.Silo", "Evercraft.Orleans.Silo\Evercraft.Orleans.Silo.csproj", "{F5F6F2EB-3320-49F8-8DD4-D679C800664E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evercraft.Orleans.Interfaces", "Evercraft.Orleans.Interfaces\Evercraft.Orleans.Interfaces.csproj", "{02478134-05C7-4B3C-B88D-46054ACA0A18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evercraft.Common", "Evercraft.Common\Evercraft.Common.csproj", "{44002C49-68DA-455C-90EE-B300C87B7A19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DEE7B7D1-4365-4791-B947-9982D81A1BDA} = {0454AE44-0AB9-4F04-B242-DC504C2C9A8D}
+		{F5F6F2EB-3320-49F8-8DD4-D679C800664E} = {0454AE44-0AB9-4F04-B242-DC504C2C9A8D}
+		{02478134-05C7-4B3C-B88D-46054ACA0A18} = {0454AE44-0AB9-4F04-B242-DC504C2C9A8D}
+		{44002C49-68DA-455C-90EE-B300C87B7A19} = {0454AE44-0AB9-4F04-B242-DC504C2C9A8D}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEE7B7D1-4365-4791-B947-9982D81A1BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE7B7D1-4365-4791-B947-9982D81A1BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE7B7D1-4365-4791-B947-9982D81A1BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE7B7D1-4365-4791-B947-9982D81A1BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F6F2EB-3320-49F8-8DD4-D679C800664E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F6F2EB-3320-49F8-8DD4-D679C800664E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F6F2EB-3320-49F8-8DD4-D679C800664E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F6F2EB-3320-49F8-8DD4-D679C800664E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02478134-05C7-4B3C-B88D-46054ACA0A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02478134-05C7-4B3C-B88D-46054ACA0A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02478134-05C7-4B3C-B88D-46054ACA0A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02478134-05C7-4B3C-B88D-46054ACA0A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44002C49-68DA-455C-90EE-B300C87B7A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44002C49-68DA-455C-90EE-B300C87B7A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44002C49-68DA-455C-90EE-B300C87B7A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44002C49-68DA-455C-90EE-B300C87B7A19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
