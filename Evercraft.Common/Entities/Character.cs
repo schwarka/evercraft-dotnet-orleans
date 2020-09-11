@@ -37,5 +37,7 @@ namespace Evercraft.Common.Entities
             get => _name ?? string.Empty;
             set => _name = value;
         }
+
+        public bool IsAlive => HitPoints > 0;
     }
 }

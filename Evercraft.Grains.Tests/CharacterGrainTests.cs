@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using Evercraft.Common.Entities;
 using Evercraft.Orleans.Grains;
 using FluentAssertions;
@@ -22,8 +23,6 @@ namespace Evercraft.Grains.Tests
             _subject = new CharacterGrain(persistentState);
         }
 
-        #region Character Can Be Damaged
-
         [Theory,
          InlineData(-1, 0),
          InlineData(0, -1),
@@ -38,7 +37,28 @@ namespace Evercraft.Grains.Tests
             _subjectState.HitPoints.Should().Be(expectedHitPoints);
         }
 
-        #endregion
+        [Theory,
+         InlineData(-1, 0),
+         InlineData(0, -2),
+         InlineData(1, -2)]
+        public async void Character_SuffersTwoPointsOfDamage_WhenIncomingAttack_GreaterOrEqualToArmorRating_AndIsCritical(int attackRelativeToArmor, int expectedHitPointChange)
+        {
+            var attack = _subjectState.Armor + attackRelativeToArmor;
+            var expectedHitPoints = _subjectState.HitPoints + expectedHitPointChange;
 
+            await _subject.HandleIncomingAttackAsync(attack, true);
+
+            _subjectState.HitPoints.Should().Be(expectedHitPoints);
+        }
+
+        [Fact]
+        public async void Character_DoesNotSufferAdditionalDamage_WhenDead()
+        {
+            _subjectState.HitPoints = 0;
+
+            await _subject.HandleIncomingAttackAsync(20, true);
+
+            _subjectState.HitPoints.Should().Be(0);
+        }
     }
 }

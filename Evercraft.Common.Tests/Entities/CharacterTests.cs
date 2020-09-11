@@ -84,6 +84,16 @@ namespace Evercraft.Common.Tests.Entities
             _subject.HitPoints.Should().Be(int.MaxValue);
         }
 
+        [Theory,
+         InlineData(1, true),
+         InlineData(0, false),
+         InlineData(-1, false)]
+        public void Character_IsAlive_WhenHitPoints_GreaterThanZero(int hitPoints, bool isAlive)
+        {
+            _subject.HitPoints = hitPoints;
+            _subject.IsAlive.Should().Be(isAlive);
+        }
+
         #endregion
     }
 }
