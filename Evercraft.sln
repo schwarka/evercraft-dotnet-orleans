@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evercraft.Common", "Evercra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evercraft.Common.Tests", "Evercraft.Common.Tests\Evercraft.Common.Tests.csproj", "{1D93ECFA-A0F2-4F07-82B5-8CB2F5DC5095}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evercraft.Grains.Tests", "Evercraft.Grains.Tests\Evercraft.Grains.Tests.csproj", "{E32AF1B5-9787-4F50-A6A8-A6CF072CBAFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,7 @@ Global
 		{02478134-05C7-4B3C-B88D-46054ACA0A18} = {0454AE44-0AB9-4F04-B242-DC504C2C9A8D}
 		{44002C49-68DA-455C-90EE-B300C87B7A19} = {0454AE44-0AB9-4F04-B242-DC504C2C9A8D}
 		{1D93ECFA-A0F2-4F07-82B5-8CB2F5DC5095} = {89B391A5-9805-46C7-ACA6-4D67AF789574}
+		{E32AF1B5-9787-4F50-A6A8-A6CF072CBAFE} = {89B391A5-9805-46C7-ACA6-4D67AF789574}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DEE7B7D1-4365-4791-B947-9982D81A1BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,5 +50,9 @@ Global
 		{1D93ECFA-A0F2-4F07-82B5-8CB2F5DC5095}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D93ECFA-A0F2-4F07-82B5-8CB2F5DC5095}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D93ECFA-A0F2-4F07-82B5-8CB2F5DC5095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E32AF1B5-9787-4F50-A6A8-A6CF072CBAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32AF1B5-9787-4F50-A6A8-A6CF072CBAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32AF1B5-9787-4F50-A6A8-A6CF072CBAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32AF1B5-9787-4F50-A6A8-A6CF072CBAFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

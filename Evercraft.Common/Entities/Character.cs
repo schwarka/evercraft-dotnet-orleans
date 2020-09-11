@@ -9,11 +9,16 @@ namespace Evercraft.Common.Entities
 
     public class Character
     {
+        private CharacterAlignment? _alignment;
         private int? _armor;
         private int? _hitPoints;
         private string _name;
 
-        public CharacterAlignment Alignment { get; set; }
+        public CharacterAlignment Alignment
+        {
+            get => _alignment ?? CharacterAlignment.Neutral;
+            set => _alignment = value;
+        }
 
         public int Armor
         {
